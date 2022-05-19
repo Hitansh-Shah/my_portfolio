@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+.mainContent {
+    width: 60vw;
+}
+
+.hitanshShah {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+
+
+.imageIllustrationContent {
+    width: 40vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media screen and (max-width: 768px) {
+    .mainContent {
+        margin-bottom: 70px;
+    }
+
+    .imageIllustrationContent {
+        position: relative;
+        top: 20vh;
+        right: 20vw;
+    }
+}
+
+.webDeveloper {
+    /* color: rgb(255, 131, 69); */
+    color: rgb(161, 161, 161);
+    font-family: 'Roboto Slab', serif;
+    font-size: 2vw;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.revealOpacity {
+    opacity: 1 !important;
+}
+
+@media screen and (min-width: 769px) {
+    .webDeveloper {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .webDeveloper {
+        font-size: 5vw;
+    }
+}
+
+.index {
+    height: "100vh";
+    display: "flex";
+    align-items: "center";
+    /* background-image: url('../public/background_image.jpg'); */
+}
+
+.imageIllustration {
+    opacity: 0;
+    transform: translateY(15%);
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out 2s;
+}
+
+.imageIllustrationOpacity {
+    transform: translateY(-15%);
+    opacity: 1;
+}
+
+.imageIllustrationFloat {
+    animation: float 4s infinite;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(-15%);
+    }
+
+    50% {
+        transform: translateY(15%);
+    }
+
+    100% {
+        transform: translateY(-15%);
+    }
+}
+
+.socialHandles {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out 1s;
+}
+
+.socialIcons {
+    margin-right: 40px;
+    color: rgb(255, 111, 0);
+}
+
+
+.mouseScrollContainer {
+    height: 35px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out 2s;
+}
+
+@media screen and (max-width: 768px) {
+    .mouseScrollContainer {
+        position: relative;
+        top: 20vh;
+        right: -10vw;
+    
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .mouseScrollContainer {
+        position: relative;
+        top: 55vh;
+        right: 48vw;
+    }
+}
+
+.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+}

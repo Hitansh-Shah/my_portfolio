@@ -1,0 +1,38 @@
+.aboutMeButton {
+    position: relative;
+    text-decoration: none;
+    border: 1.4px solid rgb(0, 238, 255);
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+
+.revealOpacity {
+    opacity: 1;
+}
+
+.buttonContent {
+    display: flex;
+    color: rgb(0, 238, 255);
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.buttonContentHover {
+    color: black;
+}
+
+.aboutMeButton:hover {
+    background-color: white;
+    border: 1.4px solid transparent;
+
+}
+
+.aboutMeText {
+    margin-right: 10px;
+}

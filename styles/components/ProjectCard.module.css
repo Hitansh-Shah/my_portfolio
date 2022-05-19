@@ -1,0 +1,108 @@
+.projectCard {
+    width: 250px;
+    height: 340px;
+    border-radius: 25px;
+    background-color: rgba(198, 198, 198, 0.1);
+}
+
+.projectCardAnimation {
+    animation: bgcolor 12s infinite;
+}
+
+
+@keyframes bgcolor {
+    0% {
+        background-color: rgba(255, 8, 0, 0.1);
+        box-shadow: rgba(255, 8, 0, 1) 0px 10px 50px;
+        color: rgb(118, 4, 0);
+        text-shadow: 2px 4px 3px rgba(118, 4, 0, 0.3);
+    }
+    16% {
+        background-color: rgba(0, 132, 255, 0.1);
+        box-shadow: rgba(0, 132, 255, 1) 0px 10px 50px;
+        color: rgb(0, 57, 111);
+        text-shadow: 2px 4px 3px rgba(0, 132, 255,0.3);
+    }
+    33% {
+        background-color: rgba(255, 247, 0, 0.1);
+        box-shadow: rgba(255, 247, 0, 1) 0px 10px 50px;
+        color: rgb(113, 100, 0);
+        text-shadow: 2px 4px 3px rgba(113, 100, 0, 0.3);
+    }
+    49% {
+        background-color: rgba(225, 0, 255, 0.1);
+        box-shadow: rgba(225, 0, 255, 1) 0px 10px 50px;
+        color: rgb(95, 0, 107);
+        text-shadow: 2px 4px 3px rgba(95, 0, 107, 0.3);
+    }
+    66% {
+        background-color: rgba(60, 255, 0, 0.1);
+        box-shadow: rgba(60, 255, 0, 1) 0px 10px 50px;
+        color: rgb(25, 108, 0);
+        text-shadow: 2px 4px 3px rgba(25, 108, 0, 0.3);
+    }
+    82% {
+        background-color: rgba(0, 247, 255, 0.1);
+        box-shadow: rgba(0, 247, 255, 1) 0px 10px 50px;
+        color: rgb(0, 74, 77);
+        text-shadow: 2px 4px 3px rgba(0, 74, 77, 0.3);
+    }
+    100% {
+        background-color: rgba(255, 8, 0, 0.1);
+        box-shadow: rgba(255, 8, 0, 1) 0px 10px 50px;
+        color: rgb(118, 4, 0);
+        text-shadow: 2px 4px 3px rgba(118, 4, 0, 0.3);
+    }
+}
+
+
+.projectThumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 30%;
+    backdrop-filter: blur(2.5px) brightness(2.5);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.projectAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 70%;
+    backdrop-filter: blur(2.5px) brightness(2.5);
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.projectTitle {
+    /* color: rgb(0, 0, 0); */
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.projectDescriptionContainer {
+    /* width: 300px; */
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.viewProjectButton {
+    border: 1.4px solid black;
+    color: black;
+    padding: 7px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.viewProjectButton:hover {
+    border: none;
+    background-color: whitesmoke;
+}

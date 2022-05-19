@@ -1,0 +1,16 @@
+.myCanvasContainer {
+    /* width: 560px; */
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 769px) {
+    .myCanvasContainer {
+        width: 610px;
+    }
+}
+
+.myCanvas {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,61 @@
+.heart {
+    animation: heart 1s infinite;
+}
+
+.aboutme {
+    font-family: 'League Spartan', sans-serif ;
+    font-weight: 700;
+}
+
+@keyframes heart {
+    0% {
+        font-size: 12px;
+    }
+    50% {
+        font-size: 17px;
+    }
+    100% {
+        font-size: 12px;
+    }
+}
+
+.hello {
+    width: min-content;
+    transform-origin: bottom right;
+    animation: hello 1.5s infinite;
+}
+
+@keyframes hello {
+    0% {
+        transform: rotateZ(-5deg);
+    }
+    50% {
+        transform: rotateZ(25deg);
+    }
+    100% {
+        transform: rotateZ(-5deg);
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .cloudCanvasDiv {
+        /* width: 570px;
+        height: 570px; */
+        position: relative;
+        bottom: 70px;
+        margin-right: 50px;
+    }
+
+    .introDiv {
+        max-width: 70vw;
+    }
+
+
+    .skillsAndIntro {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+

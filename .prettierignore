@@ -1,0 +1,11 @@
+# Ignore artifacts:
+.next/
+node_modules/
+public/
+styles/
+build
+.eslintrc.json 
+.prettierrc.json 
+next.config.js 
+package.json 
+README.md
