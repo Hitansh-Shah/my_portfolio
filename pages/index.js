@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../styles/index.module.css"
 import JellyName from "../components/jellyName";
 import { useEffect, useRef } from "react";
-import LaptopIllustration from "../staticData/laptop_illustration.png"
+import LaptopIllustration from "../public/laptop_illustration.png"
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 import AboutMeButton from "../components/aboutMeButton";
 import { SiGmail } from "react-icons/si"
@@ -63,6 +63,10 @@ export default function Home() {
 
   return (
     <div>
+      <Head>
+        <title>Hitansh Shah</title>
+        <link rel="icon" href="laptop_illustration.png" />
+      </Head>
       <div ref={triggerRef}/>
       <div style={{height: "100vh", display: "flex", alignItems: "center"}} id="homePage" >
 

@@ -1,5 +1,4 @@
 import ProjectCard from "./projectCard";
-import Fade from 'react-reveal/Fade'
 
 export default function ProjectList() {
 
