@@ -187,7 +187,7 @@ export default function ExpandingNavbar() {
                                                 linkItem?
                                                 <animated.div style={linkStyle}>
                                                     <LinkButton styles={styles} onClickHandler={() => setIsOpen(!isOpen)} link={link} isResume={link==="RESUME"} href={ link==="RESUME" ? 
-                                                        'https://drive.google.com/file/d/1jukQ6ngM1BPTIK80JbYMtZlaAIqGEknN/view?usp=sharing' : 
+                                                        'https://drive.google.com/file/d/1n_4wG8WmI4SB2UkksP5P_GXPbMl_7u9R/view?usp=sharing&usp=embed_facebook' : 
                                                         `#${link.toLowerCase()}Page`} 
                                                     />
                                                 </animated.div>

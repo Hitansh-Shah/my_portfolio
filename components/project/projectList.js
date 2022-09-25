@@ -4,6 +4,11 @@ export default function ProjectList() {
 
     const projectData = [
         {
+            title: "Ecommerce-Warranty",
+            description: "This is a DApp built on Ethereum for handling warranty in form of NFTs. It allows the admin to mint Warranty NFTs for the customers. Customers are provided with a dashboard to track all their NFTs.",
+            projectLink: "https://github.com/Hitansh-Shah/ecommerce-warranty",
+        },
+        {
             title: "Technobar",
             description: "Technobar is a MERN stack web-app. It helps developers to connect and view the skills of other developers who have registered on this platform. It is deployed on heroku. Go and register now!",
             projectLink: "https://github.com/Hitansh-Shah/Technobar",
@@ -23,20 +28,10 @@ export default function ProjectList() {
             description: "This is a desktop application which allows user to get the details of a song by entering its name and the name of its artist. It gives various details like the lyrics of the song, it's album, etc.",
             projectLink: "https://github.com/Hitansh-Shah/Spomtify"
         },
-        {
-            title: "chat-app",
-            description: "This a chatting application built with NodeJS and socket.io. Users can join chat rooms and set their names.",
-            projectLink: "https://github.com/Hitansh-Shah/chat-app"
-        },
-        {
-            title: "tic-tac-toe",
-            description: "This is my first project using html,css and javascript. A simple start for web-dev:)",
-            projectLink: "https://github.com/Hitansh-Shah/tic-tac-toe-game"
-        }
     ]
 
     return( 
-        <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
+        <div style={{display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
             {
                 projectData.map((data, index) => {
                     return(
